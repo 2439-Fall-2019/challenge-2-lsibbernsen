@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!-- Lucas Sibbernsen
+            homepage.html
+            INFO2439
+            Thoendel
+            fall 2019
+        -->
+        <title>Lucas Sibbernsen | INFO 2439 | homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="cipher.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="themes/hackerman.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    </head>
+    <body>
+
+            <div data-role="page">
+                    <h1>Morse Code</h1>
+                    <h2>Morse code is a character encoding scheme used in telecommunication that encodes text characters as standardized sequences of two different signal durations called dots and dashes or dits and dahs.[2][3] Morse code is named for Samuel F. B. Morse, an inventor of the telegraph. </h2>
+                    <h1>How to Solve</h1>
+                    <h2>
+                        Like the Pigpen cipher, all you need is the key and a bit of patience. Using the dits and dashes that correspond to each letter, you can figure out a morse code. <br>
+                        <img src="images/morse.png" alt="morse" width="300" height="300" />
+                    </h2> 
+            
+                    <h1>Code</h1>
+                    <h2>Use this code and what you've learned to access the next page!<br>
+                        CODE: --- -.- / -... --- --- -- . .-.<br>
+                    </h2>
+            
+                    <form>
+                            <label for="pswd">Enter your password: </label>
+                            <input type="password" id="pswd">
+                            <input type="button" value="Submit" onclick="checkPswd();" />
+                    </form>
+
+        <div data-role="footer" data-position="fixed"
+        data-id="footernav" data-theme="a">
+                <h2><a href="homepage.html">Homepage</a> | <a href="moreinfo.html">More Info</a> | <a href="master.html">Master Page</a></h2>                                      
+            </div>
+        </div>
+        <script>
+                function checkPswd() {
+        var confirmPassword = "ok boomer";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="homepage.html";
+        }
+        else{
+            alert("Incorrect. Hint: This one is a classic. Just use the above guide to find the corresponding letters!");
+        }
+    }
+        </script>
+    </body>
+</html>

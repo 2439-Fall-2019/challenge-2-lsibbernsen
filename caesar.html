@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <!-- Lucas Sibbernsen
+            homepage.html
+            INFO2439
+            Thoendel
+            fall 2019
+        -->
+        <title>Lucas Sibbernsen | INFO 2439 | homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="cipher.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" href="themes/hackerman.min.css" />
+        <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    </head>
+    <body>
+
+            <div data-role="page">
+        <h1>Caesar Cipher</h1>
+        <h2>WARNING: Due to a bug, you need to reload this page to make the password work. Sorry for the inconvenience!
+        </h2>
+        <h2>In Cryptography, a Caesar Cipher is one of the simplest and most widely known encryption techniques.
+            The method is named after Julius Caesar, who used it in his private correspondence.</h2>
+        <h1>How to Solve</h1>
+        <h2>To solve a Ceasar Cipher, you should shift the alphabet based on a given value. You may have to try every value to brute force it.<br>
+
+            For example, if our key is 5, we will shift the alphabet by 5. <br>
+
+            abcdefghijklmnopqrstuvwxyz<br>
+            
+            fghijklmnopqrstuvwxyzabcde<br>
+
+            Now F corresponds to A, G corresponds to B, and so on. Now we can decode shifted messages, or code our own.
+
+        </h2> 
+
+        <h1>Code</h1>
+        <h2>Use this code and what you've learned to access the next page!<br>
+
+            KEY: 5<br>
+
+            mjqqt btwqi<br>
+        </h2>
+
+
+        <form>
+                <label for="pswd">Enter your password: </label>
+                <input type="password" id="pswd">
+                <input type="button" value="Submit" onclick="checkPswd();" />
+        </form>
+        
+        <div data-role="footer" data-position="fixed"
+        data-id="footernav" data-theme="a">
+                <h2><a href="homepage.html">Homepage</a> | <a href="moreinfo.html">More Info</a> | <a href="master.html">Master Page</a></h2>                                      
+            </div>
+        </div>
+
+        <script>
+                function checkPswd() {
+        var confirmPassword = "hello world";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="vigenere.html";
+        }
+        else{
+            alert("Incorrect. Hint: Use the alphabet above if your having trouble doing it in your head, it's the same key.");
+        }
+    }
+        </script>
+    </body>
+</html>
